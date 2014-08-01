@@ -1,0 +1,23 @@
+header{
+  font-family: georgia;
+  font-size: 32px;
+  text-align: center;
+}
+.container{
+  display: block;
+  text-align: center;
+  ul{
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+  }
+}
+
+.homepage, .firstalbum, .secondalbum, .thirdalbum {
+  display: none;
+}
+
+.currentPage {
+  display: block;
+}
