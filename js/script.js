@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-  $(".homepage a").click(event) {
-//^^the links on the homepage are now a jQuery object and when someone clicks on them, something is going to happen//
+  $(".homepage a").click(function(event){
 
     event.preventDefault();
     var navigate= "." + $(this) .attr  ("rel");
@@ -9,4 +8,18 @@ $(document).ready(function() {
     $(".container").children().removeClass("currentPage");
     $(navigate).addClass("currentPage");
   });
+
+  $(".nav").click(function(event){
+      $(".homepage").siblings().removeClass("currentPage");
+    $(".homepage").addClass("currentPage");
+
+  });
+
+
+
+$(".imgList a").click(function(event){
+  event.preventDefault();
+  $(this).toggleClass("bigPicture");        $(this).closest('li').siblings().toggleClass("hidden");
+  });
+
 });

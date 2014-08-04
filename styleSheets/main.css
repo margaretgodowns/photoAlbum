@@ -1,7 +1,20 @@
-header {
-  font-family: georgia;
+body {
+  background-image: url('http://4.bp.blogspot.com/-JHR7KRbxvQQ/T2SlSU4KIoI/AAAAAAAAFsQ/9GOQwVn7RZA/s1600/JaneBwallpaper.jpg'); }
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  color: white;
   font-size: 32px;
-  text-align: center; }
+  text-align: center;
+  background: #d4dfb4;
+  font-weight: 100; }
+
+.nav {
+  text-decoration: none; }
+  .nav h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: white; }
 
 .container {
   display: block;
@@ -16,3 +29,11 @@ header {
 
 .currentPage {
   display: block; }
+
+.bigPicture img {
+  height: 400px;
+  width: 400px;
+  display: inline-block; }
+
+.container .hidden {
+  display: none; }
