@@ -19,7 +19,8 @@ $(document).ready(function() {
 
 $(".imgList a").click(function(event){
   event.preventDefault();
-  $(this).toggleClass("bigPicture");        $(this).closest('li').siblings().toggleClass("hidden");
+  $(this).toggleClass("bigPicture");        
+  $(this).closest('li').siblings().toggleClass("hidden");
   });
 
 });
